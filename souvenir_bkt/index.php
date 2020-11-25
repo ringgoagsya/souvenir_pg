@@ -178,7 +178,7 @@ require("../connect.php");
 
 <script type="text/javascript">
 
-var server = "http://localhost/souvenir_1811522023/souvenir_bkt/";
+var server = "https://souvenirpg.herokuapp.com/souvenir_bkt/";
 var map;
 var markersDua = [];
 var koordinat = 'null'
