@@ -1854,9 +1854,9 @@ function viewkecamatansou()
           clickMarker(centerBaru, id_tempat_kuliner);
           console.log(jenis);
           if (jenis == 'sou') {
-            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
+            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
           } else {
-            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
+            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
           }
 
           // $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success' onclick='detsou(\""+id_tempat_kuliner+"\");'>Show</a></td><td><a role='button' class='btn btn-success fa fa-taxi' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
