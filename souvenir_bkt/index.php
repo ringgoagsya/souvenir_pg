@@ -5087,22 +5087,22 @@ aktifkanRadiuss4();
                             <div class="slideshow-container">
                                <div class="mySlides">
                                 <div class="numbertext">1 / 4</div>
-                                <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%" src='../_foto/sanjai.png'></a>
+                                <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%; height:350px" src='../_foto/sanjai.png'></a>
                                 <div class="text">Various Sanjai</div>
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">2 / 4</div>
-                                <a href="javascript:;" onclick="populartisert()"><img style="width:100%" src="../_foto/baju.png"></a>
+                                <a href="javascript:;" onclick="populartisert()"><img style="width:100%; height:350px" src="../_foto/baju.png"></a>
                                 <div class="text">Bukittinggi T-Shirt</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">3 / 4</div>
-                                <a href="javascript:;" onclick="populartradisional()"><img style="width:100%" src="../_foto/sulaman.png"></a>
+                                <a href="javascript:;" onclick="populartradisional()"><img style="width:100%; height:350px" src="../_foto/sulaman.png"></a>
                                 <div class="text">Sulaman and Bordir</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">4 / 4</div>
-                                <a href="javascript:;" onclick="populartenun()"><img style="width:100%" src="../_foto/tenun.png"></a>
+                                <a href="javascript:;" onclick="populartenun()"><img style="width:100%; height:350px" src="../_foto/tenun.png"></a>
                                 <div class="text">Tenun</div>                              
                               </div>
                               
