@@ -57,7 +57,7 @@ require("../connect.php");
         display: block;
         width: auto;
         height: auto;
-        padding-right: 5px;
+        padding: 5px;
         background-color: rgba(219,219,219,0.8);
       } 
 
@@ -71,7 +71,7 @@ require("../connect.php");
       .next {
         cursor: pointer;
         position: absolute;
-        top: 42%;
+        top: 50%;
         width: auto;
         padding: 16px;
         margin-top: -50px;
@@ -88,14 +88,14 @@ require("../connect.php");
       .next1 {
         cursor: pointer;
         position: absolute;
-        top: 65%;
+        top: 83%;
         width: auto;
         padding: 10px;
-        margin-top: 9.2px;
-        color: black;
-        background-color: rgba(219,219,219,0.5);
+        margin-top: 1px;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
         font-weight: bold;
-        font-size: 10px;
+        font-size: 20px;
         border-radius: 0 3px 3px 0;
         user-select: none;
         -webkit-user-select: none;
@@ -103,23 +103,23 @@ require("../connect.php");
 
       /* Position the "next button" to the right */
       .next {
-        right: 40px;
+        right: 15px;
         border-radius: 3px 0 0 3px;
       }
 
       .next1 {
-        right: 40px;
-        border-radius: 2px 0 0 2px;
+        right: 15px;
+        border-radius: 3px 0 0 3px;
       }
 
       .prev{
-        left: 40px;
+        left: 15px;
         border-radius: 3px 0 0 3px;
       }
 
       .prev1{
-        left: 40px;
-        border-radius: 2px 0 0 2px;
+        left: 15px;
+        border-radius: 3px 0 0 3px;
       }
 
       /* On hover, add a black background color with a little bit see-through */
@@ -144,8 +144,8 @@ require("../connect.php");
       .column {
         float: left;
         width: 25%; 
-        padding: 3px;
-        background-color: black;
+        padding: 2px;
+        background-color: grey;
       }
 
       /* Add a transparency effect for thumnbail images */
@@ -1450,7 +1450,7 @@ function detsou(id14433){
                 // $('#hasilcaridet').append("<tr><td colspan='2'> "+product_souvenir+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content:  "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",   
+            content:  "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1542,7 +1542,7 @@ function detsouxx(id14433){
                 // $('#hasilcaridet').append("<tr><td colspan='2'> "+product_small_industry+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content:  "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",
+            content:   "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1613,7 +1613,7 @@ function detsou1(id14433f){
                 // $('#hasilcaridet').append("<tr><td colspan='2'> "+dataproduct+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content:  "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",  
+            content:   "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",  
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1682,7 +1682,7 @@ function detik(id14433){
                 $('#hasilcaridet').append("<tr><td colspan='2'> "+product_small_industry+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content:  "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",   
+            content:  "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><a role='button' class='btn btn-success fa fa-road' value='Route' title='Show Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery (\""+id+"\")' title='More Information'></a> <a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()' title='Object Arround'></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1854,9 +1854,9 @@ function viewkecamatansou()
           clickMarker(centerBaru, id_tempat_kuliner);
           console.log(jenis);
           if (jenis == 'sou') {
-            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
+            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\")'></a></td></tr>");
           } else {
-            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
+            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\")'></a></td></tr>");
           }
 
           // $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success' onclick='detsou(\""+id_tempat_kuliner+"\");'>Show</a></td><td><a role='button' class='btn btn-success fa fa-taxi' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
@@ -2488,7 +2488,7 @@ function detailinfohotel(id90){
 
 
 //Menampilkan Angkot Sekitar Kuliner
-function kulAngkot(id_angkot1122){
+function kulAngkot(id_angkot1122,lat1,lng1){
           hapusMarkerTerdekat();
           hapusInfo();
           clearroute();
@@ -2538,7 +2538,7 @@ function kulAngkot(id_angkot1122){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' info='info 'class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\")'></a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' title='Information' 'class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lon+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
               }
             }
            }
@@ -2599,7 +2599,7 @@ function ikangkot(id_angkot1122442,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' title='info'class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' title='Information' class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
               }
             }
            }
@@ -2660,7 +2660,7 @@ function restaurantangkot(id_angkot1122492,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button'title='info' class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' title='Information' class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
               }
             }
            }
@@ -2722,7 +2722,7 @@ function souangkot(id_angkot112244,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' title='Information' class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
               }
             }
            }
@@ -2905,7 +2905,7 @@ function worshipangkot(id_angkot11224437,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' title='info'class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' title='info' class='btn btn-success fa fa-info' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'></a></td></tr>");
               }
             }
            }
@@ -3308,7 +3308,7 @@ function route_sekitar(lat1,lng1,lat,lng) {
       var request = {
         origin:start,
         destination:end,
-        travelMode: google.maps.TravelMode.DRIVING,
+        travelMode: google.maps.TravelMode.WALKING,
         unitSystem: google.maps.UnitSystem.METRIC,
         provideRouteAlternatives: true
       };
@@ -3620,7 +3620,7 @@ function tw_sekitar(latitude,longitude,rad){ // TEMPAT WISATA SEKITAR
               map.setCenter(centerBaru);
               console.log(rad);
 
-              $('#hasilcarihotel').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfohotel(\""+id+"\"'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='hotelangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcarihotel').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfohotel(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='hotelangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
         }
@@ -4810,45 +4810,7 @@ aktifkanRadiuss4();
                   
 
 
-                    <li class="sub-menu">
-                      <a href="javascript:;" >
-                        <i class="fa fa-home"></i>
-                        <span>Status With Radius</span>
-                      </a>
-                      <ul class="sub">
-                        <div class=" form-group" style="color: white;"> <br>
-                          <label>Based On Radius</label><br>
-                          <label for="inputradiuss_status">Radius : </label>
-                          <label  id="nilai_status">0</label> m
-                          <script>
-                            function cekkk2()
-                            {
-                              document.getElementById('nilai_status').innerHTML=document.getElementById('inputradiuss_status').value*100
-                            }
-                          </script>
-                          <input  type="range" onchange="cekkk2();aktifkanRadiuss2()" id="inputradiuss_status" 
-                                  name="inputradiuss_status" data-highlight="true" min="0" max="20" value="0" >
-                        </div>
-                          <!-- <label style="color: white;">Sub District</label> -->
-                          <select class="form-control select2" style="width: 100%; height: 70%;" id="caristatus_rad">
-                            <option value="">-Choose-</option>
-                            <?php
-                              include("connect.php"); 
-                              $caristatus=pg_query($conn,"select * from status order by status ASC");
-                              while($rowcaristatus = pg_fetch_assoc($caristatus))
-                              {
-                                echo"<option value=".$rowcaristatus['id'].">".$rowcaristatus['status']."</option>";
-                              }
-                            ?>
-
-                          </select>
-                                              
-                        
-                        <div class=" form-group">
-                          <button type="submit" class="btn btn-info btn-block btn-flat" id="viewstatus_rad" onclick='viewstatus_rad();'>Search</button>
-                        </div>
-                     </ul>
-                    </li>
+                    
 </ul></li>
                 </li>
                     <li class="sub-menu">
@@ -4858,45 +4820,7 @@ aktifkanRadiuss4();
                       </a>
                   </li>
                  
-                   <li class="sub-menu">
-                  <a href="javascript:;" >
-                    <i class="fa fa-user"></i>
-                    <span>Program 1811522023</span>
-                  </a>
-                  <ul class="sub">
-                    <li class="sub-menu">
-                      <a href="goole/HelloAnalytics.php" >
-                        
-                        <i class="fa fa-globe"></i>
-                        <span>Totals Page View </span>
-                      </a>
-                      </li>
-                    <li class="sub-menu">
-                  <a href="goole/getdata.php" >
-                    <i class="fa fa-cubes"></i>
-                    <span>Organic User</span>
-                  </a>
-                  </li>
-                  <li class="sub-menu">
-                      <a href="goole/HelloAnalytics2.php" >
-                        <i class="fa fa-cubes"></i>
-                        <span>Non Organic User</span>
-                      </a>
-                   </li>
-                   <li class="sub-menu">
-                  <a href="indexgraph.php" >
-                    <i class="fa fa-cubes"></i>
-                    <span>Graph Visitor</span>
-                  </a>
-                  </li>
-                  <li class="sub-menu">
-                  <a href="goole/anality.php" >
-                    <i class="fa fa-cubes"></i>
-                    <span>Web Browser User</span>
-                  </a>
-                  </li>
-                  </ul>
-                </li>
+                   
               </ul>
               <!-- sidebar menu end-->
           </div>
@@ -4966,7 +4890,7 @@ aktifkanRadiuss4();
                               </div>         
                         </div>
 
-                        <div class="col-lg-5 ds"  id="tampilangkotsekitarik" style="display:none;" >
+                        <div class="col-lg-4 ds"  id="tampilangkotsekitarik" style="display:none;" >
                           
                           <!-- <h3 style="font-size:16px">Angkot Information</h3> -->
                               <a class="btn btn-compose" style="color: white">Angkot Information</a>
@@ -5083,26 +5007,26 @@ aktifkanRadiuss4();
                           <header class="panel-heading" style=" width: 100%"  >
                             <label class="btn btn-compose" style="background-color:black;border-colom: 1px solid black" id="judul_table" style="margin-bottom: 0px">Popular Souvenir</label>
                           </header>
-                          <div style="height:410px;  margin:20px;">
+                          <div style="height:530px;  margin:5px;">
                             <div class="slideshow-container">
                                <div class="mySlides">
                                 <div class="numbertext">1 / 4</div>
-                                <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%" src='../_foto/sanjai.png'></a>
+                                <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%;height: 300px" src='../_foto/sanjai.png'></a>
                                 <div class="text">Various Sanjai</div>
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">2 / 4</div>
-                                <a href="javascript:;" onclick="populartisert()"><img style="width:100%" src="../_foto/baju.png"></a>
+                                <a href="javascript:;" onclick="populartisert()"><img style="width:100%;height: 300px" src="../_foto/baju.png"></a>
                                 <div class="text">Bukittinggi T-Shirt</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">3 / 4</div>
-                                <a href="javascript:;" onclick="populartradisional()"><img style="width:100%" src="../_foto/sulaman.png"></a>
+                                <a href="javascript:;" onclick="populartradisional()"><img style="width:100%;height: 300px" src="../_foto/sulaman.png"></a>
                                 <div class="text">Sulaman and Bordir</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">4 / 4</div>
-                                <a href="javascript:;" onclick="populartenun()"><img style="width:100%" src="../_foto/tenun.png"></a>
+                                <a href="javascript:;" onclick="populartenun()"><img style="width:100%;height: 300px" src="../_foto/tenun.png"></a>
                                 <div class="text">Tenun</div>                              
                               </div>
                               

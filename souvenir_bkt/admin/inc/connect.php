@@ -1,8 +1,8 @@
 <?php
 	$host = "localhost";
 	$user = "postgres";
-	$pass = "simpatiku76";
+	$pass = "root";
 	$port = "5432";
-	$dbname = "bkt_tourism";
+	$dbname = "souv";
 	$conn = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass) or die("Gagal");
 ?>

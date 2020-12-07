@@ -426,16 +426,16 @@ session_start();
 
                       <header class="panel-heading" style="float:left">
                       <label style="color: black; margin-right:5px">Google Map with Location List</label>
-                      <button type="button" onclick="posisisekarang()" class="btn btn-success" style=" color: white;" data-toggle="tooltip" id="posisinow" title="Posisi Saya" 
+                      <button type="button" onclick="posisisekarang()" class="btn btn-success" style=" color: white;" data-toggle="tooltip" id="posisinow" title="geolocation" 
                     style="margin-right: 2px;" ><i class="fa fa-location-arrow" > </i>
                       </button>
 
-                       <button type="button" onclick="lokasimanual()" class="btn btn-success"  data-toggle="tooltip" id="posmanual" title="Posisi Manual" 
+                       <button type="button" onclick="lokasimanual()" class="btn btn-success"  data-toggle="tooltip" id="posmanual" title="Manual Position" 
                               style="margin-right: 2px;"><i class="fa fa-map-marker" ></i>
                       </button>
                                             
                        <label id="tombol">
-                       <a type="button" onclick="legenda()" id="showlegenda" class="btn btn-success" data-toggle="tooltip" title="Legenda" style="margin-right: 2px;"><i class="fa fa-eye"></i>
+                       <a type="button" onclick="legenda()" id="showlegenda" class="btn btn-success" data-toggle="tooltip" title="Legend" style="margin-right: 2px;"><i class="fa fa-eye"></i>
                        </a>
                        </label>
                               </header>
@@ -776,7 +776,7 @@ function showDivs(n) {
                 position: centerBaru,
                 // content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='Gallery' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",  
 
-                content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><a role='button' class='btn btn-success fa fa-compass' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()'></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' onclick='gallery(\""+id+"\")'></a> <a role='button' class='btn btn-success fa fa-road' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",
+                content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br> <a role='button' class='btn btn-success fa fa-road' value='Route' title='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' /></a> <a role='button' class='btn btn-success fa fa-info' value='More Information' title='Information' onclick='gallery(\""+id+"\")'></a>  <a role='button' class='btn btn-success fa fa-compass' value='Object Arround' title='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\");hapuspopular()'></a> <a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a>",
                 pixelOffset: new google.maps.Size(0, -33)
                 });
               infoposisi.push(infowindow); 
