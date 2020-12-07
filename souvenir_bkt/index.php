@@ -178,7 +178,7 @@ require("../connect.php");
 
 <script type="text/javascript">
 
-var server = "http://localhost/souvenir_1811522023/souvenir_bkt/";
+var server = "https://souvenirpg.herokuapp.com/souvenir_bkt/";
 var map;
 var markersDua = [];
 var koordinat = 'null'
@@ -1854,9 +1854,15 @@ function viewkecamatansou()
           clickMarker(centerBaru, id_tempat_kuliner);
           console.log(jenis);
           if (jenis == 'sou') {
+<<<<<<< HEAD
             $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\")'></a></td></tr>");
           } else {
             $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\")'></a></td></tr>");
+=======
+            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
+          } else {
+            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
+>>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
           }
 
           // $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success' onclick='detsou(\""+id_tempat_kuliner+"\");'>Show</a></td><td><a role='button' class='btn btn-success fa fa-taxi' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
@@ -5011,22 +5017,38 @@ aktifkanRadiuss4();
                             <div class="slideshow-container">
                                <div class="mySlides">
                                 <div class="numbertext">1 / 4</div>
+<<<<<<< HEAD
                                 <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%;height: 300px" src='../_foto/sanjai.png'></a>
+=======
+                                <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%; height:300px" src='../_foto/sanjai.png'></a>
+>>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Various Sanjai</div>
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">2 / 4</div>
+<<<<<<< HEAD
                                 <a href="javascript:;" onclick="populartisert()"><img style="width:100%;height: 300px" src="../_foto/baju.png"></a>
+=======
+                                <a href="javascript:;" onclick="populartisert()"><img style="width:100%; height:300px" src="../_foto/baju.png"></a>
+>>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Bukittinggi T-Shirt</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">3 / 4</div>
+<<<<<<< HEAD
                                 <a href="javascript:;" onclick="populartradisional()"><img style="width:100%;height: 300px" src="../_foto/sulaman.png"></a>
+=======
+                                <a href="javascript:;" onclick="populartradisional()"><img style="width:100%; height:300px" src="../_foto/sulaman.png"></a>
+>>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Sulaman and Bordir</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">4 / 4</div>
+<<<<<<< HEAD
                                 <a href="javascript:;" onclick="populartenun()"><img style="width:100%;height: 300px" src="../_foto/tenun.png"></a>
+=======
+                                <a href="javascript:;" onclick="populartenun()"><img style="width:100%; height:300px" src="../_foto/tenun.png"></a>
+>>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Tenun</div>                              
                               </div>
                               

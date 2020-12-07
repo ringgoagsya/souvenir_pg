@@ -30,7 +30,7 @@ while($row = pg_fetch_array($hasil))
 
 		$typ=$row['id_souvenir_type'];
 		$type= '';
-		  if ($typ='a'){
+		  if ($typ=='a'){
 		  $type = 'Various Sanjai';
 		} else if ($typ=='b') {
 		  $type = 'Coffee Powder';
@@ -73,7 +73,7 @@ while($row = pg_fetch_array($hasil2))
 
 		$typ=$row['id_industry_type'];
 		$type= '';
-		  if ($typ='a'){
+		  if ($typ=='a'){
 		  $type = 'Various Sulaman';
 		} else if ($typ=='b') {
 		  $type = 'Various Bordiran';
