@@ -92,7 +92,7 @@ session_start();
       </div>
 
       <!--logo start-->
-       <a class="logo" ><p><img src=""><font face="Courier New">WebGis Souvenir (22 1811522023 Ringgo Sahara AL)</font> </p></a>
+       <a class="logo" ><p><img src=""><font face="Courier New">WebGis Souvenir (20 1811522023 Ringgo Sahara AL)</font> </p></a>
         <div class="top-menu">
           <ul class="nav pull-right top-menu">
             <li><div id="loader" style="display:none"></div></li>
