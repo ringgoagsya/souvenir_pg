@@ -1,1 +1,1 @@
-kuliner_bkt
+souvenir_bkt
