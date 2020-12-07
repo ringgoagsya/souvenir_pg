@@ -4390,7 +4390,7 @@ aktifkanRadiuss4();
             </div>
 
             <!--logo start-->
-            <a class="logo" ><font face="Courier New">WebGis Souvenir (22 1811522023 Ringgo Sahara AL)</font> <img src=""></a>
+            <a class="logo" ><font face="Courier New">WebGis Souvenir (20 1811522023 Ringgo Sahara AL)</font> <img src=""></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
