@@ -4579,8 +4579,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $carikecamatankul=mysqli_query($conn,"select * from district order by name ASC");
-                              while($rowcarikecamatankul = mysqli_fetch_assoc($carikecamatankul))
+                              $carikecamatankul=pg_query($conn,"select * from district order by name ASC");
+                              while($rowcarikecamatankul = pg_fetch_assoc($carikecamatankul))
                               {
                                 echo"<option value=".$rowcarikecamatankul['id'].">".$rowcarikecamatankul['name']."</option>";
                               }
@@ -4615,8 +4615,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $caritipe=mysqli_query($conn,"select * from souvenir_type order by name ASC");
-                              while($rowcaristatus = mysqli_fetch_assoc($caritipe))
+                              $caritipe=pg_query($conn,"select * from souvenir_type order by name ASC");
+                              while($rowcaristatus = pg_fetch_assoc($caritipe))
                               {
                                 echo"<option value=".$rowcaristatus['id'].">".$rowcaristatus['name']."</option>";
                               }
@@ -4644,8 +4644,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $caritipe2=mysqli_query($conn,"select * from industry_type order by name ASC");
-                              while($rowcaristatus = mysqli_fetch_assoc($caritipe2))
+                              $caritipe2=pg_query($conn,"select * from industry_type order by name ASC");
+                              while($rowcaristatus = pg_fetch_assoc($caritipe2))
                               {
                                 echo"<option value=".$rowcaristatus['id'].">".$rowcaristatus['name']."</option>";
                               }
@@ -4675,8 +4675,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $caristatus=mysqli_query($conn,"select * from status order by status ASC");
-                              while($rowcaristatus = mysqli_fetch_assoc($caristatus))
+                              $caristatus=pg_query($conn,"select * from status order by status ASC");
+                              while($rowcaristatus = pg_fetch_assoc($caristatus))
                               {
                                 echo"<option value=".$rowcaristatus['id'].">".$rowcaristatus['status']."</option>";
                               }
@@ -5207,8 +5207,8 @@ aktifkanRadiuss4();
                         <input type="text" class="form-control hidden" id="id" name="id" value="<?php echo $id ?>">
                           <div class="form-group row col-xs-9" >
                             <?php
-                              $sql2 = mysqli_query($conn,"select * from product_souvenir order by product");
-                              while($dt = mysqli_fetch_array($sql2)){
+                              $sql2 = pg_query($conn,"select * from product_souvenir order by product");
+                              while($dt = pg_fetch_array($sql2)){
                                   echo "<div class='checkbox'><label style='color:black'><input name='product_souvenir' value=\"$dt[id]\" type='checkbox' style='width:25px'>$dt[product]</label></div>";
                                 }
                               
@@ -5216,8 +5216,8 @@ aktifkanRadiuss4();
 
 
                              <?php
-                              $sql2 = mysqli_query($conn,"select * from product_small_industry order by product");
-                              while($dt = mysqli_fetch_array($sql2)){
+                              $sql2 = pg_query($conn,"select * from product_small_industry order by product");
+                              while($dt = pg_fetch_array($sql2)){
                                   echo "<div class='checkbox'><label style='color:black'><input name='product_small_industry' value=\"$dt[id]\" type='checkbox' style='width:25px'>$dt[product]</label></div>";
                                 }
                               
