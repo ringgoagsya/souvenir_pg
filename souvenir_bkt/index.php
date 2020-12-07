@@ -176,6 +176,7 @@ require("../connect.php");
   <link rel="stylesheet" href="assets/css/bootstrap-slider.css" type="text/css">
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 
+
 <script type="text/javascript">
 
 var server = "https://souvenirpg.herokuapp.com/souvenir_bkt/";
@@ -1854,15 +1855,9 @@ function viewkecamatansou()
           clickMarker(centerBaru, id_tempat_kuliner);
           console.log(jenis);
           if (jenis == 'sou') {
-<<<<<<< HEAD
             $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\")'></a></td></tr>");
           } else {
             $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\")'></a></td></tr>");
-=======
-            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Show Information' onclick='detsou(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\");detsousou(\""+id_tempat_kuliner+"\")'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
-          } else {
-            $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button'class='btn btn-success fa fa-info' title='Show Information'  onclick='detsou(\""+id_tempat_kuliner+"\",\""+lat+"\",\""+lon+"\");detsousou(\""+id_tempat_kuliner+"\");'></a></td><td><a role='button' class='btn btn-success fa fa-taxi' title='Local Transportation' onclick='ikangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
->>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
           }
 
           // $('#hasilcari').append("<tr><td>"+nama_tempat_kuliner+"</td><td><a role='button' class='btn btn-success' onclick='detsou(\""+id_tempat_kuliner+"\");'>Show</a></td><td><a role='button' class='btn btn-success fa fa-taxi' onclick='souangkot(\""+id_tempat_kuliner+"\")'></a></td></tr>");
@@ -3410,7 +3405,7 @@ function industri_sekitar(latitude,longitude,rad){ //INDUSTRI SEKITAR
               });
             markersDua.push(marker);
             map.setCenter(centerBaru);
-            $('#hasilcariind').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoik(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='ikangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+            $('#hasilcariind').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoik(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='ikangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
           }//end for
         }});//end ajax  
       }
@@ -3442,7 +3437,7 @@ function restaurant_sekitar(latitude,longitude,rad){ //INDUSTRI SEKITAR
               });
             markersDua.push(marker);
             map.setCenter(centerBaru);
-            $('#hasilcarirestaurant').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinforestaurant(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='restaurantangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+            $('#hasilcarirestaurant').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinforestaurant(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='restaurantangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
           }//end for
         }});//end ajax  
       }
@@ -3482,7 +3477,7 @@ function kuliner_sekitar(latitude,longitude,rad){ //KULINER SEKITAR
               markersDua.push(marker);
               map.setCenter(centerBaru);
 
-              $('#hasilcariculi').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detculi(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='kulAngkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcariculi').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detculi(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='kulAngkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
         }
@@ -3516,7 +3511,7 @@ function masjid_sekitar(latitude,longitude,rad){ // MASJID SEKITAR
             markersDua.push(marker);
             map.setCenter(centerBaru);
 
-            $('#hasilcarimosque').append("<tr><td class='col-lg-2'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfomosque(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='worshipangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+            $('#hasilcarimosque').append("<tr><td class='col-lg-2'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfomosque(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='worshipangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
           }//end for
         }});//end ajax  
       }
@@ -3551,7 +3546,7 @@ function oleholeh_sekitar(latitude,longitude,rad){ // OLEH-OLEH SEKITAR
               markersDua.push(marker);
               map.setCenter(centerBaru);
 
-              $('#hasilcarisouv').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfosou(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='souangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcarisouv').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfosou(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='souangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
         } 
@@ -3587,7 +3582,7 @@ function tw_sekitar(latitude,longitude,rad){ // TEMPAT WISATA SEKITAR
               markersDua.push(marker);
               map.setCenter(centerBaru);
 
-              $('#hasilcariobj').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoobj(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='owangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcariobj').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfoobj(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='owangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
 
@@ -3626,7 +3621,7 @@ function tw_sekitar(latitude,longitude,rad){ // TEMPAT WISATA SEKITAR
               map.setCenter(centerBaru);
               console.log(rad);
 
-              $('#hasilcarihotel').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfohotel(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='hotelangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
+              $('#hasilcarihotel').append("<tr><td class='col-lg-3'>"+name+"</td><td><a role='button' class='btn btn-success fa fa-road' title='Route' onclick='route_sekitar(\""+latitude+"\",\""+longitude+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-info' title='Information' onclick='detailinfohotel(\""+id+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-taxi' title='Route Local Transportation' onclick='hotelangkot(\""+id+"\",\""+lat+"\",\""+lon+"\")'></a>&nbsp;<a role='button' class='btn btn-success fa fa-map-marker' onclick='setLastPos("+latitude+", "+longitude+")' title='I am Here' ></a></td></tr> ");
             }//end for
           }});//end ajax  
         }
@@ -4584,8 +4579,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $carikecamatankul=pg_query($conn,"select * from district order by name ASC");
-                              while($rowcarikecamatankul = pg_fetch_assoc($carikecamatankul))
+                              $carikecamatankul=mysqli_query($conn,"select * from district order by name ASC");
+                              while($rowcarikecamatankul = mysqli_fetch_assoc($carikecamatankul))
                               {
                                 echo"<option value=".$rowcarikecamatankul['id'].">".$rowcarikecamatankul['name']."</option>";
                               }
@@ -4620,8 +4615,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $caritipe=pg_query($conn,"select * from souvenir_type order by name ASC");
-                              while($rowcaristatus = pg_fetch_assoc($caritipe))
+                              $caritipe=mysqli_query($conn,"select * from souvenir_type order by name ASC");
+                              while($rowcaristatus = mysqli_fetch_assoc($caritipe))
                               {
                                 echo"<option value=".$rowcaristatus['id'].">".$rowcaristatus['name']."</option>";
                               }
@@ -4649,8 +4644,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $caritipe2=pg_query($conn,"select * from industry_type order by name ASC");
-                              while($rowcaristatus = pg_fetch_assoc($caritipe2))
+                              $caritipe2=mysqli_query($conn,"select * from industry_type order by name ASC");
+                              while($rowcaristatus = mysqli_fetch_assoc($caritipe2))
                               {
                                 echo"<option value=".$rowcaristatus['id'].">".$rowcaristatus['name']."</option>";
                               }
@@ -4680,8 +4675,8 @@ aktifkanRadiuss4();
                             <option value="">-Choose-</option>
                             <?php
                               include("connect.php"); 
-                              $caristatus=pg_query($conn,"select * from status order by status ASC");
-                              while($rowcaristatus = pg_fetch_assoc($caristatus))
+                              $caristatus=mysqli_query($conn,"select * from status order by status ASC");
+                              while($rowcaristatus = mysqli_fetch_assoc($caristatus))
                               {
                                 echo"<option value=".$rowcaristatus['id'].">".$rowcaristatus['status']."</option>";
                               }
@@ -5009,53 +5004,37 @@ aktifkanRadiuss4();
                 <div  class="col-md-4 col-sm-4 mb">  
                   <div class="row">                   
                       <div class="col-md-11 col-sm-12 mb">
-                        <div class="white-panel pns" style="height: 530px">
+                        <div class="white-panel pns" style="height: 510px">
                           <header class="panel-heading" style=" width: 100%"  >
                             <label class="btn btn-compose" style="background-color:black;border-colom: 1px solid black" id="judul_table" style="margin-bottom: 0px">Popular Souvenir</label>
                           </header>
-                          <div style="height:530px;  margin:5px;">
+                          <div style="height:510px;  margin:20px;">
                             <div class="slideshow-container">
                                <div class="mySlides">
                                 <div class="numbertext">1 / 4</div>
-<<<<<<< HEAD
                                 <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%;height: 300px" src='../_foto/sanjai.png'></a>
-=======
-                                <a href="javascript:;" onclick="popularsanjai()"><img style="width:100%; height:300px" src='../_foto/sanjai.png'></a>
->>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Various Sanjai</div>
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">2 / 4</div>
-<<<<<<< HEAD
                                 <a href="javascript:;" onclick="populartisert()"><img style="width:100%;height: 300px" src="../_foto/baju.png"></a>
-=======
-                                <a href="javascript:;" onclick="populartisert()"><img style="width:100%; height:300px" src="../_foto/baju.png"></a>
->>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Bukittinggi T-Shirt</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">3 / 4</div>
-<<<<<<< HEAD
                                 <a href="javascript:;" onclick="populartradisional()"><img style="width:100%;height: 300px" src="../_foto/sulaman.png"></a>
-=======
-                                <a href="javascript:;" onclick="populartradisional()"><img style="width:100%; height:300px" src="../_foto/sulaman.png"></a>
->>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Sulaman and Bordir</div>                              
                               </div>
                               <div class="mySlides">
                                 <div class="numbertext">4 / 4</div>
-<<<<<<< HEAD
                                 <a href="javascript:;" onclick="populartenun()"><img style="width:100%;height: 300px" src="../_foto/tenun.png"></a>
-=======
-                                <a href="javascript:;" onclick="populartenun()"><img style="width:100%; height:300px" src="../_foto/tenun.png"></a>
->>>>>>> 08cf8c322afb88135ecbfef6119eb0928ceb0d39
                                 <div class="text">Tenun</div>                              
                               </div>
                               
                               <a class="prev" onclick="plusSlides(-1)">❮</a>
                               <a class="next" onclick="plusSlides(1)">❯</a>
                              </div> 
-                             <br>
+                            <br>
                             <div class="slideshow-container">
                               <div class="column">
                                 <img class="demo cursor" src="../_foto/sanjai.png" style="width:100%" onclick="currentSlide(1)">
@@ -5228,8 +5207,8 @@ aktifkanRadiuss4();
                         <input type="text" class="form-control hidden" id="id" name="id" value="<?php echo $id ?>">
                           <div class="form-group row col-xs-9" >
                             <?php
-                              $sql2 = pg_query($conn,"select * from product_souvenir order by product");
-                              while($dt = pg_fetch_array($sql2)){
+                              $sql2 = mysqli_query($conn,"select * from product_souvenir order by product");
+                              while($dt = mysqli_fetch_array($sql2)){
                                   echo "<div class='checkbox'><label style='color:black'><input name='product_souvenir' value=\"$dt[id]\" type='checkbox' style='width:25px'>$dt[product]</label></div>";
                                 }
                               
@@ -5237,8 +5216,8 @@ aktifkanRadiuss4();
 
 
                              <?php
-                              $sql2 = pg_query($conn,"select * from product_small_industry order by product");
-                              while($dt = pg_fetch_array($sql2)){
+                              $sql2 = mysqli_query($conn,"select * from product_small_industry order by product");
+                              while($dt = mysqli_fetch_array($sql2)){
                                   echo "<div class='checkbox'><label style='color:black'><input name='product_small_industry' value=\"$dt[id]\" type='checkbox' style='width:25px'>$dt[product]</label></div>";
                                 }
                               
