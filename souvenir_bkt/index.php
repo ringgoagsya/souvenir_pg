@@ -71,7 +71,7 @@ require("../connect.php");
       .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 55%;
         width: auto;
         padding: 16px;
         margin-top: -50px;
@@ -88,7 +88,7 @@ require("../connect.php");
       .next1 {
         cursor: pointer;
         position: absolute;
-        top: 83%;
+        top: 89%;
         width: auto;
         padding: 10px;
         margin-top: 1px;
